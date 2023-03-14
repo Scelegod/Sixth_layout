@@ -1,14 +1,18 @@
 @import url(/css/reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;500&display=swap");
-.sidebar_container {
+.page_container {
   margin: 0 auto;
+  display: flex;
 }
 
 html,
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background: #181818;
+  color: #FFFFFF;
 }
-
+/* sidebar */
 .sidebar {
   background-image: url(/img/sidebar_bg.jpg);
   background-repeat: no-repeat;
@@ -24,6 +28,7 @@ body {
   gap: 3px;
 
   color: #ffffff;
+  box-shadow: 5px 0px 15px rgba(5, 5, 5, 0.1);
 }
 
 .sidebar__user-img {
@@ -87,4 +92,66 @@ body {
 .buttons__contact {
   background: #3137c9;
   box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+}
+/* sidebar */
+/* main */
+.main__header{
+  background: #0D0D0D;
+  box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
+  width: 84vw;
+  height: 40px;
+
+  font-size: 0.7em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  
+  /* position: fixed; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu, .header__content{
+  align-items: center;
+  display: flex;
+}
+.menu__item, .header__content__profile{
+  padding: 0 15px;
+}
+.header__content__search{
+  background: #202020;
+  box-shadow: -7px 1px 10px rgba(0, 0, 0, 0.3);
+  height: 40px;
+  width: 212px;
+  padding: 14px 20px;
+  font-size: 1.2em;
+  line-height: 1.1em;
+}
+/* main */
+
+.container{
+    margin: 0 auto;
+}
+
+.stories{
+  display: flex;
+  padding: 50px;  
+  position: relative;
+  border: 1px solid red;
+}
+.stories__content{
+  width: 140px;
+}
+.stories__content__img{
+  width: 140px;
+  position: absolute; 
+  border-radius: 7px;
+  z-index: 1;
+}
+.stories__content__title{
+  position: relative;
+  z-index: 20;
+}
+.stories__content__date{
+  position: relative;
 }
