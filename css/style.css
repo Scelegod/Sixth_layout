@@ -12,6 +12,11 @@ body {
   background: #181818;
   color: #FFFFFF;
 }
+
+.container{
+    margin: 0 auto;
+}
+
 /* sidebar */
 .sidebar {
   background-image: url(/img/sidebar_bg.jpg);
@@ -94,11 +99,15 @@ body {
   box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
 }
 /* sidebar */
-/* main */
+
+.main{
+  width: 100%;
+}
+
+/* header */
 .main__header{
   background: #0D0D0D;
   box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
-  width: 84vw;
   height: 40px;
 
   font-size: 0.7em;
@@ -127,31 +136,63 @@ body {
   font-size: 1.2em;
   line-height: 1.1em;
 }
-/* main */
 
-.container{
-    margin: 0 auto;
-}
-
+/* stories */
 .stories{
   display: flex;
-  padding: 50px;  
-  position: relative;
   border: 1px solid red;
+  font-size: 0.8em;
+  line-height: 1.1em;
+  margin: 60px 50px 0;
 }
+
 .stories__content{
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  
   width: 140px;
+  height: 195px;
+  
+  margin: 0 auto;
+  padding: 15px;
+  
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 52.08%, rgba(0, 0, 0, 0.406154) 76.41%, rgba(0, 0, 0, 0.8) 100%), url(/img/stories-1.jpg);
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
+  border-radius: 5px;
 }
-.stories__content__img{
-  width: 140px;
-  position: absolute; 
-  border-radius: 7px;
-  z-index: 1;
+
+.stories__content-one{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 52.08%, rgba(0, 0, 0, 0.406154) 76.41%, rgba(0, 0, 0, 0.8) 100%), url(/img/stories-1.jpg);
 }
-.stories__content__title{
-  position: relative;
-  z-index: 20;
+
+.stories__content-two{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 52.08%, rgba(0, 0, 0, 0.406154) 76.41%, rgba(0, 0, 0, 0.8) 100%), url(/img/stories-2.jpg);
 }
+
+.stories__content-three{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 52.08%, rgba(0, 0, 0, 0.406154) 76.41%, rgba(0, 0, 0, 0.8) 100%), url(/img/stories-3.jpg);
+}
+
+.stories__content-four{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 52.08%, rgba(0, 0, 0, 0.406154) 76.41%, rgba(0, 0, 0, 0.8) 100%), url(/img/stories-4.jpg);
+}
+
 .stories__content__date{
-  position: relative;
+  text-align: right;
+}
+
+/* add-post */
+.add-post{
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+  background: #121212;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+}
+
+.add-post__posting{
+  width: 100px;
 }
