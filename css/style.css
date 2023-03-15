@@ -8,7 +8,7 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background: #181818;
   color: #ffffff;
 }
@@ -27,7 +27,6 @@ body {
   background-color: #202020;
 
   width: 300px;
-  height: 100vh;
   padding: 0 20px;
 
   display: flex;
@@ -81,23 +80,24 @@ body {
 
 .sidebar__buttons {
   display: flex;
-  /* gap: 20px; */
+  gap: 20px;
 }
 
 .buttons__works,
 .buttons__contact {
-  padding: 13px 25px;
   font-size: 0.8em;
   line-height: 1.1em;
   border-radius: 25px;
 }
 
 .buttons__works {
+  padding: 13px 22px;
   background: #ed3024;
   box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
 }
 
 .buttons__contact {
+  padding: 13px 19px;
   background: #3137c9;
   box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
 }
@@ -128,6 +128,18 @@ body {
 .header__content {
   align-items: center;
   display: flex;
+}
+
+.header__burger{
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 7px;
+}
+
+.burger__line{
+  border: 1px solid #fff;
+  width: 30px;
 }
 
 .menu__item,
@@ -253,7 +265,7 @@ body {
 
 .add-post__posting {
   width: 35em;
-  padding: 13px 0;
+  padding: 13px 10px;
 
   cursor: pointer;
 
@@ -345,17 +357,78 @@ body {
 .pagenav {
   display: flex;
   gap: 10px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
 }
 
 .pagenav__page,
 .pagenav__prev,
 .pagenav__next {
   padding: 12px 16px;
-
-  vertical-align: middle;
-
+  
+  cursor: pointer;
+  
   background: #0d0d0d;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
+}
+
+.pagenav__page--active{
+  background: #104BE3;
+  box-shadow: 0px 0px 10px rgba(58, 108, 234, 0.15);
+  border-radius: 3px;
+}
+
+@media (max-width: 1024px) {
+  .main{
+    width: 71%;
+  }
+
+  .post{
+    width: 40em;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar{
+    display: none;
+  }
+  .main{
+    width: 100%;
+  }
+
+  .post{
+    width: 40em;
+  }
+
+  .header__burger{
+    display: flex;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .sidebar{
+    display: none;
+  }
+
+  .main{
+    width: 100%;
+  }
+
+  .menu__item{
+    display: none;
+  }
+  
+  .post{
+    width: 25em;
+  }
+
+  .header__burger{
+    display: flex;
+    margin-left: 10px;
+  }
+
+  .stories{
+    margin: 60px 0 0;
+  }
 }

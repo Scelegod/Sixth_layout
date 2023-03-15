@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Блог</title>
   </head>
   <body>
     <div class="page_container">
       <div class="sidebar">
-        <img class="sidebar__user-img" src="/img/user.jpg" alt="user-img" />
+        <img class="sidebar__user-img" src="./img/user.jpg" alt="user-img" />
         <p class="sidebar__user-name">Дмитрий Валак</p>
         <p class="sidebar__user-profession">блог front-end разработчика</p>
         <div class="sidebar__soc-net">
-          <img src="/icons/instagram.svg" alt="instagram" />
-          <img src="/icons/vk.svg" alt="vk" />
-          <img src="/icons/pinterest.svg" alt="pinterest" />
+          <img src="./icons/instagram.svg" alt="instagram" />
+          <img src="./icons/vk.svg" alt="vk" />
+          <img src="./icons/pinterest.svg" alt="pinterest" />
         </div>
         <p class="sidebar__line"></p>
         <p class="sidebar__characteristic">
@@ -33,6 +33,13 @@
       <div class="main">
         <header class="main__header">
           <ul class="header__menu">
+            <li>
+              <div class="header__burger">
+                <p class="burger__line"></p>
+                <p class="burger__line"></p>
+                <p class="burger__line"></p>
+              </div>
+            </li>
             <li class="menu__item">Главная</li>
             <li class="menu__item">Статьи</li>
             <li class="menu__item">Обо мне</li>
@@ -115,11 +122,11 @@
           </div>
 
           <div class="pagenav">
-            <div class="pagenav__prev"><img src="./icons/prev.svg" alt="prev"></div>
+            <img class="pagenav__prev" src="./icons/prev.svg" alt="prev">
             <div class="pagenav__page">1</div>
-            <div class="pagenav__page">1</div>
+            <div class="pagenav__page pagenav__page--active">2</div>
             <div class="pagenav__page">3</div>
-            <div class="pagenav__next"><img src="./icons/next.svg" alt="next"></div>
+            <img class="pagenav__next" src="./icons/next.svg" alt="next">
           </div>
         </div>
       </div>
