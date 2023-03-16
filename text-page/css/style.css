@@ -147,9 +147,6 @@ body {
   padding: 0 15px;
 }
 
-.menu__item a {
-  color: #fff;
-}
 .header__content__search {
   background: #202020;
   box-shadow: -7px 1px 10px rgba(0, 0, 0, 0.3);
