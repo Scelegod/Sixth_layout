@@ -10,13 +10,13 @@
   <body>
     <div class="page_container">
         <div class="sidebar">
-          <img class="sidebar__user-img" src="./img/user.jpg" alt="user-img" />
+          <img class="sidebar__user-img" src="./../img/user.jpg" alt="user-img" />
           <p class="sidebar__user-name">Дмитрий Валак</p>
           <p class="sidebar__user-profession">блог front-end разработчика</p>
           <div class="sidebar__soc-net">
-            <img src="./icons/instagram.svg" alt="instagram" />
-            <img src="./icons/vk.svg" alt="vk" />
-            <img src="./icons/pinterest.svg" alt="pinterest" />
+            <img src="./../icons/instagram.svg" alt="instagram" />
+            <img src="./../icons/vk.svg" alt="vk" />
+            <img src="./../icons/pinterest.svg" alt="pinterest" />
           </div>
           <p class="sidebar__line"></p>
           <p class="sidebar__characteristic">
@@ -40,10 +40,10 @@
                   <p class="burger__line"></p>
                 </div>
               </li>
-              <li class="menu__item">Главная</li>
-              <li class="menu__item">Статьи</li>
-              <li class="menu__item">Обо мне</li>
-              <li class="menu__item">Реклама</li>
+              <li class="menu__item"><a href=".#" class="">Главная</a></li>
+              <li class="menu__item"><a href="./text-page/text-page.html" class="">Статьи<img class="icons-list" src="./../icons/list.svg" alt="list"></a></li>
+              <li class="menu__item"><a href=".#" class="">Обо мне</a></li>
+              <li class="menu__item"><a href=".#" class="">Реклама</a></li>
             </ul>
             <div class="header__content">
               <p class="header__content__profile">Профиль</p>
@@ -51,46 +51,72 @@
             </div>
           </header>
           <div class="container">
-                <div class="stories">
-                  <div class="stories__content stories__content-one">
-                    <p class="stories__content__title">Отдыхаю на природе</p>
-                    <p class="stories__content__date">21.09.2020</p>
-                  </div>
-                  <div class="stories__content stories__content-two">
-                    <p class="stories__content__title">Заканчиваю сложный проект</p>
-                    <p class="stories__content__date">15.09.2020</p>
-                  </div>
-                  <div class="stories__content stories__content-three">
-                    <p class="stories__content__title">Переехал в новую квартиру</p>
-                    <p class="stories__content__date">15.09.2020</p>
-                  </div>
-                  <div class="stories__content stories__content-four">
-                    <p class="stories__content__title">Осень пришла!</p>
-                    <p class="stories__content__date">28.08.2020</p>
-                  </div>
-            </div>
-            <div class="add-post">
-              <input class="add-post__posting" type="text" placeholder="Напишите что-нибудь">
-              <img class="add-post__photos" src="./icons/photo-btn.svg" alt="Картинка">
-              <img class="add-post__send" src="./icons/send-btn.svg" alt="Отправка">
-            </div>
-  
+                
             <div class="post">
-              <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-              <p class="post__date">21.06.2020</p>
-            </div>
-  
-            <div class="post">
-              <img class="post__img" src="./img/post_1.jpg" alt="">
-              <p class="post__title">Как писать код быстро и безболезненно?</p>
-              <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-              <div class="post__info">
-                <div class="post__info__left">
-                  <p class="post__date">21.06.2020</p>
-                  <img src="./icons/krug.svg" alt="Круг">
-                  <p class="post__theme">создание сайтов</p>
+              <div class="post__action">
+                <p class="action__back">вернуться назад</p>
+                <div class="action__impart">
+                  <p class="impart__text">поделиться</p>
+                  <img class="impart__icons" src="./../icons/impart.svg" alt="impart">
                 </div>
-                <a class="post__read">читать</a>
+              </div>
+              <p class="post__title">Как писать код быстро и безболезненно?</p>
+              <div class="post__info">
+                <!-- <div class="post__info__left"> -->
+                  <p class="post__date">21.06.2020</p>
+                  <img src="./../icons/krug.svg" alt="Круг">
+                  <p class="post__theme">создание сайтов</p>
+                <!-- </div> -->
+                <!-- <a class="post__read">читать</a> -->
+              </div>
+              <p class="post__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. 
+                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+                Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. 
+                Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. 
+                Egestas ornare vel volutpat.
+                <br>
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+              </p>
+              <img class="post__img" src="./img/post.jpg" alt="">
+              <p class="post__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. 
+                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+                Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. 
+                Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+                Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+              </p>
+              <div class="post__interesting">
+
+                <p class="interesting__line"></p>
+                <p class="interesting__title">Интересно почитать</p>
+                <div class="interesting__related-post">
+                  <div class="related-post__row">
+                    <div class="related-post__content">
+                      <p class="related-post__content__text">Как я сходил на FrontEnd Conf 2021</p>
+                      <p class="related-post__content__date">21.06.2020</p>
+                    </div>
+                    <div class="related-post__content">
+                      <p class="related-post__content__text">Купил новый ноутбук за 150 000 руб</p>
+                      <p class="related-post__content__date">21.06.2020</p>
+                    </div>
+                  </div>
+                  <div class="related-post__row">
+                    <div class="related-post__content">
+                      <p class="related-post__content__text">Как писать код быстро и  ...</p>
+                      <p class="related-post__content__date">21.06.2020</p>
+                    </div>
+                    <div class="related-post__content">
+                      <p class="related-post__content__text">Купил новый ноутбук за 150 000 руб</p>
+                      <p class="related-post__content__date">21.06.2020</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="interesting__line"></p>
               </div>
             </div>
   

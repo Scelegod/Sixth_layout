@@ -147,6 +147,9 @@ body {
   padding: 0 15px;
 }
 
+.icons-list {
+  padding: 3px 0 0 6px;
+}
 .menu__item a {
   color: #fff;
 }
