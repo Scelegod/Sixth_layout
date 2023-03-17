@@ -9,6 +9,30 @@
   </head>
   <body>
     <div class="page_container">
+      <div id="mySidenav" class="sidenav">
+        <div class="sidenav__user-content">
+          <img class="sidenav__user-img" src="./../img/user.jpg" alt="user-img" />
+          <div class="user-content__note">
+            <p class="sidenav__user-name">Дмитрий Валак</p>
+            <p class="sidenav__user-profession">блог front-end разработчика</p>
+          </div>
+        </div>
+        <div class="sidenav__nav-menu">
+          <a href="./../index.html" class="nav-menu__item">Статьи</a>
+          <div class="nav-menu__item">
+            <a href="./text-page.html" class="nav-menu__item__subitem">Саздание сайтов</a>
+            <a href="#" class="nav-menu__item__subitem">Интернет маркетинг</a>
+            <a href="#" class="nav-menu__item__subitem">Продвижение видео</a>
+          </div>
+          <a href="#" class="nav-menu__item nav-menu__item--active">Обо мне</a>
+          <a href="#" class="nav-menu__item">Реклама</a>
+          <a href="#" class="nav-menu__item">Профиль</a>
+          <div class="sidenav__buttons">
+            <button class="buttons__works">Мои работы</button>
+            <button class="buttons__contact">Написать мне</button>
+          </div>
+        </div>
+      </div>
         <div class="sidebar">
           <img class="sidebar__user-img" src="./../img/user.jpg" alt="user-img" />
           <p class="sidebar__user-name">Дмитрий Валак</p>
@@ -31,6 +55,48 @@
           </div>
         </div>
         <div class="main">
+
+
+
+
+          <div class="share-modal" id="share-modal">
+            <div class="share-modal__container">
+              <div class="share-modal__container__body">
+                <div class="container__cancel">
+                  <img class="container__cancel__icons" src="./../icons/cancel.svg" alt="Закрыть">
+                </div>
+                <div class="container__share">
+                  <img src="./../icons/facebook.svg" alt="">
+                  <img src="./../icons/twitter.svg" alt="">
+                  <img src="./../icons/vk-bg.svg" alt="">
+                  <img src="./../icons/social.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="contact-modal" id="contact-modal">
+            <div class="contact-modal__container">
+              <div class="container__body">
+                <div class="container__cancel">
+                  <img class="container__cancel__icons" src="./../icons/cancel.svg" alt="Закрыть">
+                </div>
+                <form id="form" action="/php/login.php" method="post" class="form">
+                  <input type="text" class="container__name contact-input" placeholder="Ваше имя">
+                  <input type="email" class="container__email contact-input" placeholder="Ваш e-mail">
+                  <input type="text" class="container__msg contact-input" placeholder="Текст сообщения">
+                  <button id="contactBtn" class="contactBtn">Отправить</button>
+                </form>
+                <div class="container__info">
+                  <p class="info__email">e-mail: <span class="info__email--span">@mywebsite.ru</span></p>
+                  <p class="info__number">тел: <span class="info__number--span">+943-232-856-22</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
           <header class="main__header">
             <ul class="header__menu">
               <li>
@@ -40,8 +106,15 @@
                   <p class="burger__line"></p>
                 </div>
               </li>
-              <li class="menu__item"><a href=".#" class="">Главная</a></li>
-              <li class="menu__item"><a href="./text-page/text-page.html" class="">Статьи<img class="icons-list" src="./../icons/list.svg" alt="list"></a></li>
+              <li class="menu__item"><a href="./../index.html" class="">Главная</a></li>
+              <div class="menu__item dropup">
+                <button class="dropbtn">Статьи <img class="icons-list" src="./../icons/list.svg" alt="list"></button>
+                <div class="dropup-content">
+                  <a href="./text-page.html">Создание сайтов</a>
+                  <a href="#">Интернет маркетинг</a>
+                  <a href="#">Продвижение видео</a>
+                </div>
+              </div>
               <li class="menu__item"><a href=".#" class="">Обо мне</a></li>
               <li class="menu__item"><a href=".#" class="">Реклама</a></li>
             </ul>
@@ -91,7 +164,6 @@
                 Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
               </p>
               <div class="post__interesting">
-
                 <p class="interesting__line"></p>
                 <p class="interesting__title">Интересно почитать</p>
                 <div class="interesting__related-post">
@@ -117,45 +189,55 @@
                   </div>
                 </div>
                 <p class="interesting__line"></p>
-              </div>
-            </div>
-  
-            <div class="post">
-              <img class="post__img2" src="./img/post_2.png" alt="">
-              <p class="post__title">Купил новый ноутбук за 150 000 руб</p>
-              <div class="post__info">
-                <div class="post__info__left">
-                  <p class="post__date">21.06.2020</p>
-                  <img src="./icons/krug.svg" alt="Круг">
-                  <p class="post__theme">продвижение видео</p>
+                <div class="post__discussion">
+                  <p class="post__discussion__text">Обсуждение</p>
+                  <div class="post__discussion__comment">
+                    <input class="comment__text" type="text" placeholder="Текст комментария">
+                    <button class="commentBtn">Отправить</button>
+                  </div>
+                  <div class="post__discussion__all-com">
+                    <div class="all-com__info">
+                      <div class="all-com__info__user">
+                        <img class="info__user__img" src="./../img/user-com.jpg" alt="">
+                        <div class="info__user__note">
+                          <p class="info__user__name">Дмитрий Валак</p>
+                          <p class="info__user__date">1 неделю назад</p>
+                        </div>
+                      </div>
+                      <p class="info__user__com">
+                        Et vestibulum, posuere tortor lacinia sit. 
+                        Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+                        Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. 
+                        Egestas ornare vel volutpat.
+                      </p>
+                      <p class="info__user__answer">ответить</p>
+                    </div>
+                    <div class="all-com__info__answer">
+                      <div class="all-com__info__user">
+                        <img class="info__user__img" src="./../img/user-com.jpg" alt="">
+                        <div class="info__user__note">
+                          <p class="info__user__name">Джонни</p>
+                          <p class="info__user__date">1 неделю назад</p>
+                        </div>
+                      </div>
+                      <p class="info__user__com">
+                        Et vestibulum, posuere tortor lacinia sit. 
+                        Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+                        Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. 
+                        Egestas ornare vel volutpat.
+                      </p>
+                      <p class="info__user__answer">ответить</p>
+                    </div>
+                  </div>
                 </div>
-                <a class="post__read">оставить комментарий</a>
               </div>
             </div>
   
-            <div class="post">
-              <img class="post__img3" src="./img/post_3.jpg" alt="">
-              <p class="post__title">Как я сходил на FrontEnd Conf 2021</p>
-              <p class="post__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-              <div class="post__info">
-                <div class="post__info__left">
-                  <p class="post__date">21.06.2020</p>
-                  <img src="./icons/krug.svg" alt="Круг">
-                  <p class="post__theme">создание сайтов</p>
-                </div>
-                <a class="post__read">читать</a>
-              </div>
-            </div>
-  
-            <div class="pagenav">
-              <img class="pagenav__prev" src="./icons/prev.svg" alt="prev">
-              <div class="pagenav__page">1</div>
-              <div class="pagenav__page pagenav__page--active">2</div>
-              <div class="pagenav__page">3</div>
-              <img class="pagenav__next" src="./icons/next.svg" alt="next">
-            </div>
+            
           </div>
         </div>
       </div>
+
+      <script src="./../js/sideNav.js"></script>
   </body>
 </html>

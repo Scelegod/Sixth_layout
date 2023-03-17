@@ -13,11 +13,34 @@ window.addEventListener("click", function (e) {
   }
 
   // Модальное окно
-  console.log(e.target);
-  if (e.target.closest(".buttons__contact")) {
-    document.querySelector(".contact-modal").classList.add("active");
-  }
   if (e.target.closest(".container__cancel__icons")) {
     document.querySelector(".contact-modal").classList.remove("active");
+    document.querySelector(".share-modal").classList.remove("active");
+  }
+
+  if (document.querySelector('#contact-modal').classList.contains('active')) {
+    if(!e.target.closest('.container__body')){
+      document.querySelector(".contact-modal").classList.remove("active");
+    }
+  }else{
+    if (e.target.closest(".buttons__contact")) {
+      document.querySelector(".contact-modal").classList.add("active");
+    }
+  }
+  
+
+
+  // if(e.target.closest('.action__impart')){
+  //   document.querySelector(".share-modal").classList.add("active");
+  // }
+
+  if (document.querySelector('#share-modal').classList.contains('active')) {
+    if(!e.target.closest('.share-modal__container__body')){
+      document.querySelector(".share-modal").classList.remove("active");
+    }
+  }else{
+    if (e.target.closest(".action__impart")) {
+      document.querySelector(".share-modal").classList.add("active");
+    }
   }
 });
