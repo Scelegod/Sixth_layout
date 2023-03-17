@@ -1,10 +1,10 @@
 let mySidenav = document.getElementById("mySidenav");
 let header__burger = document.querySelector(".header__burger");
 window.addEventListener("click", function (e) {
-  console.log(e.target);
+  // Бургер меню с лева
   if (mySidenav.style.width == "300px") {
     mySidenav.style.width = "0";
-  }else if(e.target.closest(".header__burger") == header__burger){
+  } else if (e.target.closest(".header__burger") == header__burger) {
     mySidenav.style.width = "300px";
   }
 
@@ -12,4 +12,12 @@ window.addEventListener("click", function (e) {
     mySidenav.style.width = "300px";
   }
 
+  // Модальное окно
+  console.log(e.target);
+  if (e.target.closest(".buttons__contact")) {
+    document.querySelector(".contact-modal").classList.add("active");
+  }
+  if (e.target.closest(".container__cancel__icons")) {
+    document.querySelector(".contact-modal").classList.remove("active");
+  }
 });

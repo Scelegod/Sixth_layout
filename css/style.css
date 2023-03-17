@@ -116,7 +116,7 @@ body {
   height: 40px;
 
   position: fixed;
-  z-index: 20;
+  z-index: 2;
   width: 85%;
 
   font-size: 0.7em;
@@ -181,6 +181,8 @@ li .header__burger {
   line-height: 1.1em;
 
   margin: 60px 50px 0;
+
+  z-index: 1;
   /* border: 1px solid red; */
 }
 
@@ -391,7 +393,6 @@ li .header__burger {
   border-radius: 3px;
 }
 
-
 /* Боковое меню */
 .sidenav {
   display: flex;
@@ -415,70 +416,70 @@ li .header__burger {
   background-repeat: no-repeat;
   background-size: 300px 100px;
 
-  overflow-y:auto;
+  overflow-y: auto;
   /* overflow-x: hidden; */
   transition: 0.5s all;
-  
 }
 
-.sidenav__user-content{
+.sidenav__user-content {
   display: flex;
   gap: 10px;
-  
+
   padding: 0 15px 12px;
 }
 
-.user-content__note{
+.user-content__note {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
-.sidenav__user-img{
+.sidenav__user-img {
   width: 65px;
   height: 65px;
-  
+
   border-radius: 50%;
   border: 2px solid #ffffff;
   box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.25);
 }
 
-.sidenav__user-name{
+.sidenav__user-name {
   font-size: 1em;
   line-height: 1.1em;
 }
 
-.sidenav__user-profession{
+.sidenav__user-profession {
   font-weight: 300;
   font-size: 0.8em;
   line-height: 1.1em;
   color: #dedede;
 }
 
-.sidenav__nav-menu, .nav-menu__item{
+.sidenav__nav-menu,
+.nav-menu__item {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
-.sidenav__nav-menu{
+.sidenav__nav-menu {
   padding-top: 30px;
-  
-  border-top: 1px solid #1C1C1C;;
+
+  border-top: 1px solid #1c1c1c;
 }
 
-.nav-menu__item, .nav-menu__item__subitem{
+.nav-menu__item,
+.nav-menu__item__subitem {
   padding: 0 8px 0 17px;
   font-weight: 300;
   font-size: 1em;
   line-height: 1em;
   color: #fff;
 }
-.nav-menu__item__subitem{
+.nav-menu__item__subitem {
   padding: 0 8px 0 30px;
 }
-.sidenav__buttons{
+.sidenav__buttons {
   display: flex;
   gap: 20px;
   padding: 30px 20px 0;
@@ -490,15 +491,15 @@ li .header__burger {
 
 /* Cписок */
 .dropbtn {
-    color: white;
-    padding: 14px 15px 14px 15px ;
-    border: none;
-    text-transform: uppercase;
+  color: white;
+  padding: 14px 15px 14px 15px;
+  border: none;
+  text-transform: uppercase;
 }
 
 .dropup {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropup-content {
@@ -508,41 +509,146 @@ li .header__burger {
   top: 40px;
   z-index: 1;
 
-  background: #3137C9;
+  background: #3137c9;
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 5px 5px;
 }
 
 .dropup-content a {
-    color: #fff;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
 }
 
-.dropup-content a:hover {background-color: #1e23ac}
+.dropup-content a:hover {
+  background-color: #1e23ac;
+}
 
 .dropup:hover .dropup-content {
-    display: block;
+  display: block;
 }
 
 .dropup:hover .dropbtn {
-    background-color: #3137C9;
+  background-color: #3137c9;
 }
 
+/* Модальное окно */
+.contact-modal {
+  /* display: none; */
+  position: fixed;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+  transform: translateY(-44.5%) scale(0);
+  transition: 0.4s ease-out;
+  /* background-color: transparent; */
+}
+
+.contact-modal.active {
+  /* display: flex; */
+  transform: translateY(0%) scale(100%);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-modal__container {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.container__body {
+  display: flex;
+  /* align-items: flex-end; */
+  flex-direction: column;
+  gap: 25px;
+
+  margin: 150px 37%;
+  padding: 20px 20px;
+
+  width: 500px;
+
+  background: #202020;
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.container__cancel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container__cancel__icons {
+  width: 20px;
+  height: 20px;
+}
+
+.form {
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.contact-input {
+  border-bottom: 1px solid #3f3f3f;
+
+  width: 340px;
+
+  padding-bottom: 9px;
+
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+.contactBtn {
+  background-color: #3137c9;
+  border-radius: 5px;
+
+  padding: 8px 15px;
+
+  color: #fff;
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+
+.container__info {
+  margin-top: 11px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  color: #b3b3b3;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+.info__email--span,
+.info__number--span {
+  text-decoration: underline;
+}
 /* Адаптивка */
 @media (max-width: 1024px) {
   .main {
     width: 71%;
   }
 
-  .main__header{
+  .main__header {
     width: 71%;
   }
   .post {
     width: 40em;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -553,7 +659,7 @@ li .header__burger {
     width: 100%;
   }
 
-  .main__header{
+  .main__header {
     width: 100%;
   }
 
@@ -576,7 +682,8 @@ li .header__burger {
     width: 100%;
   }
 
-  .menu__item, .dropup {
+  .menu__item,
+  .dropup {
     display: none;
   }
 
