@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styleWorks.css" />
+    <title>Работы</title>
+  </head>
+  <body>
+    <div class="page_container">
+      <div id="mySidenav" class="sidenav">
+        <div class="sidenav__user-content">
+          <img class="sidenav__user-img" src="./../img/user.jpg" alt="user-img" />
+          <div class="user-content__note">
+            <p class="sidenav__user-name">Дмитрий Валак</p>
+            <p class="sidenav__user-profession">блог front-end разработчика</p>
+          </div>
+        </div>
+        <div class="sidenav__nav-menu">
+          <a href="#" class="nav-menu__item">Статьи</a>
+          <div class="nav-menu__item">
+            <a href="./../text-page/text-page.html" class="nav-menu__item__subitem">Создание сайтов</a>
+            <a href="#" class="nav-menu__item__subitem">Интернет маркетинг</a>
+            <a href="#" class="nav-menu__item__subitem">Продвижение видео</a>
+          </div>
+          <a href="#" class="nav-menu__item nav-menu__item--active">Обо мне</a>
+          <a href="#" class="nav-menu__item">Реклама</a>
+          <a href="./../authorization/authorization.html" class="nav-menu__item">Профиль</a>
+          <div class="sidenav__buttons">
+            <a href=""><button class="buttons__works">Мои работы</button></a>
+            <button class="buttons__contact">Написать мне</button>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <img class="sidebar__user-img" src="./../img/user.jpg" alt="user-img" />
+        <p class="sidebar__user-name">Дмитрий Валак</p>
+        <p class="sidebar__user-profession">блог front-end разработчика</p>
+        <div class="sidebar__soc-net">
+          <img class="sidebar__soc-net__icons" src="./../icons/instagram.svg" alt="instagram" />
+          <img class="sidebar__soc-net__icons" src="./../icons/vk.svg" alt="vk" />
+          <img class="sidebar__soc-net__icons" src="./../icons/pinterest.svg" alt="pinterest" />
+        </div>
+        <p class="sidebar__line"></p>
+        <p class="sidebar__characteristic">
+          Front-end разработчик. Практик верстки сайтов. Созданием сайтов
+          занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал
+          более 10 000 часов в создании сайтов различной сложности.
+        </p>
+        <p class="sidebar__line"></p>
+        <div class="sidebar__buttons">
+          <a href=""><button class="buttons__works">Мои работы</button></a>
+          <button class="buttons__contact">Написать мне</button>
+        </div>
+      </div>
+      <div class="main">
+        <div class="contact-modal" id="contact-modal">
+          <div class="contact-modal__container">
+            <div class="container__body">
+              <div class="container__cancel">
+                <img class="container__cancel__icons" src="./../icons/cancel.svg" alt="Закрыть">
+              </div>
+              <form id="form" action="" method="post" class="form">
+                <input type="text" class="container__name contact-input" placeholder="Ваше имя">
+                <input type="email" class="container__email contact-input" placeholder="Ваш e-mail">
+                <input type="text" class="container__msg contact-input" placeholder="Текст сообщения">
+                <button id="contactBtn" class="contactBtn">Отправить</button>
+              </form>
+              <div class="container__info">
+                <p class="info__email">e-mail: <span class="info__email--span">@mywebsite.ru</span></p>
+                <p class="info__number">тел: <span class="info__number--span">+943-232-856-22</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <header class="main__header">
+          <ul class="header__menu">
+            <li>
+              <div class="header__burger" >
+                <p class="burger__line"></p>
+                <p class="burger__line"></p>
+                <p class="burger__line"></p>
+              </div>
+            </li>
+            <li class="menu__item"><a href="./../index.html" class="">Главная</a></li>
+            <div class="menu__item dropup">
+              <button class="dropbtn">Статьи <img class="icons-list" src="./../icons/list.svg" alt="list"></button>
+              <div class="dropup-content">
+                <a href="./../text-page/text-page.html">Создание сайтов</a>
+                <a href="#">Интернет маркетинг</a>
+                <a href="#">Продвижение видео</a>
+              </div>
+            </div>
+            <li class="menu__item"><a href=".#" class="">Обо мне</a></li>
+            <li class="menu__item"><a href=".#" class="">Реклама</a></li>
+          </ul>
+          <div class="header__content">
+            <a href="./../authorization/authorization.html" class="header__content__profile">Профиль</a>
+            <input type="text" class="header__content__search" placeholder="Поиск по блогу"></input>
+          </div>
+        </header>
+        <div class="container">
+          <p class="work__text">Мои работы</p>
+          <div class="work__item-1">
+            <div class="work__item__content">
+              <img class="content__img" src="./img/work-item-1.jpg" alt="Фото">
+              <div class="content__right">
+                <p class="content__title">altermono.com</p>
+                <p class="content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. 
+                  Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+                  Fusce arcu sodales lacinia eu auctor nunc nam id. 
+                  Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+                </p>
+                <div class="content__item">
+                  <p class="content__item__tag">дизайн</p>
+                  <p class="content__item__tag">создание сайтов</p>
+                  <p class="content__item__tag">SMM</p>
+                </div>
+                <a href="#" class="content__button">Перейти на сайт</a>
+              </div>
+            </div>
+          </div>
+          <div class="work__item-2">
+            <div class="work__item__content">
+              <img class="content__img2" src="./img/work-item-2.jpg" alt="Фото">
+              <div class="content__right">
+                <p class="content__title">codedoco.com</p>
+                <p class="content__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                  Elementum volutpat orci turpis urna. 
+                  Et vestibulum, posuere tortor lacinia sit. 
+                  Sagittis porttitor orci auctor in at tincidunt arcu egestas. 
+                </p>
+                <div class="content__item">
+                  <p class="content__item__tag">дизайн</p>
+                  <p class="content__item__tag">создание сайтов</p>
+                  <p class="content__item__tag">SMM</p>
+                </div>
+                <a href="#" class="content__button">Перейти на сайт</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+       https://www.figma.com/file/4Dj6lyefN8MQiZXLtTQhFw/Dmitry-%2B-(Copy)?node-id=2%3A2
+     -->
+     <script src="./../js/sideNav.js"></script>
+     <!-- <script src="./js/contact-modal.js"></script> -->
+  </body>
+</html>

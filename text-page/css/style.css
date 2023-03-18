@@ -66,6 +66,10 @@ body {
   gap: 15px;
 }
 
+.sidebar__soc-net__icons{
+  cursor: pointer;
+}
+
 .sidebar__line {
   margin: 27px 0;
   width: 260px;
@@ -88,6 +92,7 @@ body {
   font-size: 0.8em;
   line-height: 1.1em;
   border-radius: 25px;
+  color: #ffffff;
 }
 
 .buttons__works {
@@ -148,6 +153,7 @@ body {
 .menu__item,
 .header__content__profile {
   padding: 0 15px;
+  color: #ffffff;
 }
 
 .icons-list {
@@ -171,6 +177,13 @@ body {
   line-height: 1.1em;
 }
 
+.header__content__search:hover{
+  cursor: pointer;
+}
+
+.header__content__search:focus{
+  cursor: auto;
+}
 /* post */
 .post {
   display: flex;
@@ -192,6 +205,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
   opacity: 0.6;
   font-size: 0.8em;
@@ -281,6 +295,10 @@ body {
   gap: 24px;
 }
 
+.related-post__content{
+  cursor: pointer;
+}
+
 .related-post__content__text {
   color: #f3eba2;
   font-size: 0.9em;
@@ -310,6 +328,14 @@ body {
   width: 56em;
 }
 
+.comment__text:hover{
+  cursor: pointer;
+}
+
+.comment__text:focus{
+  cursor: auto;
+  border-bottom: 1px solid #107eff;
+}
 .post__discussion__all-com{
   margin-top: 31px;
   display: flex;
@@ -549,6 +575,10 @@ body {
   padding-bottom: 56px;
 }
 
+.container__share__icons{
+  cursor: pointer;
+}
+
 .contact-modal__container, .share-modal__container{
   display: flex;
   align-items: center;
@@ -599,6 +629,7 @@ body {
 .container__cancel__icons {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 .form {
@@ -619,6 +650,15 @@ body {
 
   font-size: 0.9em;
   line-height: 1.2em;
+}
+
+.contact-input:hover{
+  cursor: pointer;
+}
+
+.contact-input:focus{
+  cursor: auto;
+  border-bottom: 1px solid #107eff;
 }
 
 .contactBtn, .commentBtn {

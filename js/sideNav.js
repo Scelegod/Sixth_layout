@@ -15,7 +15,7 @@ window.addEventListener("click", function (e) {
   // Модальное окно
   if (e.target.closest(".container__cancel__icons")) {
     document.querySelector(".contact-modal").classList.remove("active");
-    document.querySelector(".share-modal").classList.remove("active");
+    // document.querySelector(".share-modal").classList.remove("active");
   }
 
   if (document.querySelector('#contact-modal').classList.contains('active')) {
@@ -33,14 +33,14 @@ window.addEventListener("click", function (e) {
   // if(e.target.closest('.action__impart')){
   //   document.querySelector(".share-modal").classList.add("active");
   // }
-
-  if (document.querySelector('#share-modal').classList.contains('active')) {
-    if(!e.target.closest('.share-modal__container__body')){
-      document.querySelector(".share-modal").classList.remove("active");
-    }
-  }else{
-    if (e.target.closest(".action__impart")) {
-      document.querySelector(".share-modal").classList.add("active");
-    }
-  }
+  //Модальное окно "Поделиться"
+  // if (document.querySelector('#share-modal').classList.contains('active')) {
+  //   if(!e.target.closest('.share-modal__container__body')){
+  //     document.querySelector(".share-modal").classList.remove("active");
+  //   }
+  // }else{
+  //   if (e.target.closest(".action__impart")) {
+  //     document.querySelector(".share-modal").classList.add("active");
+  //   }
+  // }
 });

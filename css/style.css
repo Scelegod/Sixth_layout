@@ -68,6 +68,9 @@ body {
   gap: 15px;
 }
 
+.soc-net__icons{
+  cursor: pointer;
+}
 .sidebar__line {
   margin: 27px 0;
   width: 260px;
@@ -90,6 +93,7 @@ body {
   font-size: 0.8em;
   line-height: 1.1em;
   border-radius: 25px;
+  color: #ffffff;
 }
 
 .buttons__works {
@@ -150,6 +154,7 @@ li .header__burger {
 .menu__item,
 .header__content__profile {
   padding: 0 15px;
+  color: #ffffff;
 }
 
 .icons-list {
@@ -171,6 +176,14 @@ li .header__burger {
   line-height: 1.1em;
 }
 
+.header__content__search:hover{
+  cursor: pointer;
+}
+
+.header__content__search:focus{
+  cursor: auto;
+}
+
 /* stories */
 .stories {
   display: flex;
@@ -183,7 +196,6 @@ li .header__burger {
   margin: 100px 50px 0;
 
   z-index: 1;
-  /* border: 1px solid red; */
 }
 
 .stories__content {
@@ -282,10 +294,16 @@ li .header__burger {
   width: 35em;
   padding: 13px 10px;
 
-  cursor: pointer;
-
   font-size: 0.95em;
   line-height: 1.2em;
+}
+
+.add-post__posting:hover{
+  cursor: pointer;
+}
+
+.add-post__posting:focus{
+  cursor:auto;
 }
 
 .add-post__photos,
@@ -589,6 +607,7 @@ li .header__burger {
 .container__cancel__icons {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 
 .form {
@@ -611,6 +630,14 @@ li .header__burger {
   line-height: 1.2em;
 }
 
+.contact-input:hover{
+  cursor: pointer;
+}
+
+.contact-input:focus{
+  cursor: auto;
+  border-bottom: 1px solid #107eff;
+}
 .contactBtn {
   background-color: #3137c9;
   border-radius: 5px;
@@ -727,6 +754,12 @@ li .header__burger {
     height: auto;
   }
 
+  .post__info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+  }
+
   .container__body{
     width: 400px;
   }
@@ -817,12 +850,6 @@ li .header__burger {
   .post__img3 {
     width: auto;
     height: auto;
-  }
-
-  .post__info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 13px;
   }
 
   .add-post__posting {

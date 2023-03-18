@@ -20,15 +20,15 @@
         <div class="sidenav__nav-menu">
           <a href="./../index.html" class="nav-menu__item">Статьи</a>
           <div class="nav-menu__item">
-            <a href="./text-page.html" class="nav-menu__item__subitem">Саздание сайтов</a>
+            <a href="./text-page.html" class="nav-menu__item__subitem">Создание сайтов</a>
             <a href="#" class="nav-menu__item__subitem">Интернет маркетинг</a>
             <a href="#" class="nav-menu__item__subitem">Продвижение видео</a>
           </div>
           <a href="#" class="nav-menu__item nav-menu__item--active">Обо мне</a>
           <a href="#" class="nav-menu__item">Реклама</a>
-          <a href="#" class="nav-menu__item">Профиль</a>
+          <a href="./../authorization/authorization.html" class="nav-menu__item">Профиль</a>
           <div class="sidenav__buttons">
-            <button class="buttons__works">Мои работы</button>
+            <a href="./../works/works.html"><button class="buttons__works">Мои работы</button></a>
             <button class="buttons__contact">Написать мне</button>
           </div>
         </div>
@@ -38,9 +38,9 @@
           <p class="sidebar__user-name">Дмитрий Валак</p>
           <p class="sidebar__user-profession">блог front-end разработчика</p>
           <div class="sidebar__soc-net">
-            <img src="./../icons/instagram.svg" alt="instagram" />
-            <img src="./../icons/vk.svg" alt="vk" />
-            <img src="./../icons/pinterest.svg" alt="pinterest" />
+            <img class="sidebar__soc-net__icons" src="./../icons/instagram.svg" alt="instagram" />
+            <img class="sidebar__soc-net__icons" src="./../icons/vk.svg" alt="vk" />
+            <img class="sidebar__soc-net__icons" src="./../icons/pinterest.svg" alt="pinterest" />
           </div>
           <p class="sidebar__line"></p>
           <p class="sidebar__characteristic">
@@ -50,15 +50,11 @@
           </p>
           <p class="sidebar__line"></p>
           <div class="sidebar__buttons">
-            <button class="buttons__works">Мои работы</button>
+            <a href="./../works/works.html"><button class="buttons__works">Мои работы</button></a>
             <button class="buttons__contact">Написать мне</button>
           </div>
         </div>
         <div class="main">
-
-
-
-
           <div class="share-modal" id="share-modal">
             <div class="share-modal__container">
               <div class="share-modal__container__body">
@@ -66,18 +62,14 @@
                   <img class="container__cancel__icons" src="./../icons/cancel.svg" alt="Закрыть">
                 </div>
                 <div class="container__share">
-                  <img src="./../icons/facebook.svg" alt="">
-                  <img src="./../icons/twitter.svg" alt="">
-                  <img src="./../icons/vk-bg.svg" alt="">
-                  <img src="./../icons/social.svg" alt="">
+                  <img class="container__share__icons" src="./../icons/facebook.svg" alt="facebook">
+                  <img class="container__share__icons" src="./../icons/twitter.svg" alt="twitter">
+                  <img class="container__share__icons" src="./../icons/vk-bg.svg" alt="vk">
+                  <img class="container__share__icons" src="./../icons/social.svg" alt="social">
                 </div>
               </div>
             </div>
           </div>
-
-
-
-
           <div class="contact-modal" id="contact-modal">
             <div class="contact-modal__container">
               <div class="container__body">
@@ -119,7 +111,7 @@
               <li class="menu__item"><a href=".#" class="">Реклама</a></li>
             </ul>
             <div class="header__content">
-              <p class="header__content__profile">Профиль</p>
+              <a href="./../authorization/authorization.html" class="header__content__profile">Профиль</a>
               <input type="text" class="header__content__search" placeholder="Поиск по блогу"></input>
             </div>
           </header>
@@ -168,24 +160,24 @@
                 <p class="interesting__title">Интересно почитать</p>
                 <div class="interesting__related-post">
                   <div class="related-post__row">
-                    <div class="related-post__content">
+                    <a href="#" class="related-post__content">
                       <p class="related-post__content__text">Как я сходил на FrontEnd Conf 2021</p>
                       <p class="related-post__content__date">21.06.2020</p>
-                    </div>
-                    <div class="related-post__content">
+                    </a>
+                    <a href="#" class="related-post__content">
                       <p class="related-post__content__text">Купил новый ноутбук за 150 000 руб</p>
                       <p class="related-post__content__date">21.06.2020</p>
-                    </div>
+                    </a>
                   </div>
                   <div class="related-post__row">
-                    <div class="related-post__content">
+                    <a href="#" class="related-post__content">
                       <p class="related-post__content__text">Как писать код быстро и  ...</p>
                       <p class="related-post__content__date">21.06.2020</p>
-                    </div>
-                    <div class="related-post__content">
+                    </a>
+                    <a href="#" class="related-post__content">
                       <p class="related-post__content__text">Купил новый ноутбук за 150 000 руб</p>
                       <p class="related-post__content__date">21.06.2020</p>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <p class="interesting__line"></p>
@@ -239,5 +231,6 @@
       </div>
 
       <script src="./../js/sideNav.js"></script>
+      <script src="./../js/share-modal.js"></script>
   </body>
 </html>
