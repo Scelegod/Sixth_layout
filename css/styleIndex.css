@@ -31,14 +31,6 @@
   margin: 0 auto;
   padding: 15px;
 
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.8) 0%,
-      rgba(0, 0, 0, 0) 52.08%,
-      rgba(0, 0, 0, 0.406154) 76.41%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    url(/img/stories-1.jpg);
   filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
   border-radius: 5px;
 
@@ -53,7 +45,7 @@
       rgba(0, 0, 0, 0.406154) 76.41%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url(/img/stories-1.jpg);
+    url(./../img/stories-1.jpg);
 }
 
 .stories__content-two {
@@ -64,7 +56,7 @@
       rgba(0, 0, 0, 0.406154) 76.41%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url(/img/stories-2.jpg);
+    url(./../img/stories-2.jpg);
 }
 
 .stories__content-three {
@@ -75,7 +67,7 @@
       rgba(0, 0, 0, 0.406154) 76.41%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url(/img/stories-3.jpg);
+    url(./../img/stories-3.jpg);
 }
 
 .stories__content-four {
@@ -86,7 +78,7 @@
       rgba(0, 0, 0, 0.406154) 76.41%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url(/img/stories-4.jpg);
+    url(./../img/stories-4.jpg);
 }
 .stories__content__title {
   font-family: "Lato", sans-serif;
